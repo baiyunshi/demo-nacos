@@ -1,0 +1,14 @@
+spring:
+  profiles:
+    active: test
+  application:
+    name: nacos
+  cloud:
+    nacos:
+      config:
+        server-addr: 127.0.0.1:8848
+        enabled: true
+        file-extension: yaml
+        namespace: f697594c-bc42-4b30-91aa-99e510a8b797
+server:
+  port: 9999
