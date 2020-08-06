@@ -2,13 +2,18 @@ spring:
   profiles:
     active: test
   application:
-    name: nacos
+    name: demo
   cloud:
     nacos:
-      config:
+      discovery:
         server-addr: 127.0.0.1:8848
+        namespace: f697594c-bc42-4b30-91aa-99e510a8b797
+        group: demo
+      config:
+        server-addr: ${spring.cloud.nacos.discovery.server-addr}
         enabled: true
         file-extension: yaml
         namespace: f697594c-bc42-4b30-91aa-99e510a8b797
+        group: demo
 server:
   port: 9999

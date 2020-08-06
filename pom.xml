@@ -19,6 +19,7 @@
         <spring-cloud.version>Greenwich.SR6</spring-cloud.version>
         <spring-cloud-alibaba.version>2.1.2.RELEASE</spring-cloud-alibaba.version>
         <spring-cloud-nacos.version>2.1.2.RELEASE</spring-cloud-nacos.version>
+        <spring-cloud-discovery.version>2.1.2.RELEASE</spring-cloud-discovery.version>
     </properties>
 
     <dependencies>
@@ -62,6 +63,11 @@
             <groupId>com.alibaba.cloud</groupId>
             <artifactId>spring-cloud-starter-alibaba-nacos-config</artifactId>
             <version>${spring-cloud-nacos.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.alibaba.cloud</groupId>
+            <artifactId>spring-cloud-starter-alibaba-nacos-discovery</artifactId>
+            <version>${spring-cloud-discovery.version}</version>
         </dependency>
     </dependencies>
 
