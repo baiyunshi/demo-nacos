@@ -1,5 +1,6 @@
 # demo-nacos
 
+### version：0.1
 ####环境配置信息：
 jdk:1.8
 
@@ -18,5 +19,9 @@ springcloud-nacos-config:2.1.2.RELEASE
 
 多环境配置文件加载方式：${spring.application.name}-${spring.profile.active}.${spring.cloud.nacos.config.file-extension}
 
-例如本项目目前加载配置文件为：nacos-test.yaml
+例如本项目目前加载配置文件为：demo-test.yaml
+
+### version：0.1
+
+集成了nacos注册中心
 
